@@ -1,0 +1,278 @@
+/* ОБНУЛЕНИЕ И БАЗА */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1e2a3e;
+}
+
+.контейнер {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* АКЦЕНТНЫЙ ЦВЕТ (медицинский — темно-зеленый/синий) */
+.акцент {
+    color: #0f7b6e;
+}
+
+/* ШАПКА */
+.шапка {
+    background: #0a2e3a;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.шапка .контейнер {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.лого-название {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.лого-описание {
+    font-size: 12px;
+    display: block;
+    opacity: 0.8;
+}
+
+.телефон-ссылка {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.телефон-текст {
+    font-size: 12px;
+    display: block;
+    opacity: 0.7;
+}
+
+.кнопка-вызова, .кнопка-большая {
+    background: #0f7b6e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.кнопка-вызова:hover, .кнопка-большая:hover {
+    background: #0a5e54;
+}
+
+/* ГЕРОЙ */
+.герой {
+    padding: 60px 0;
+    background: #f0f7f5;
+}
+
+.герой-сетка {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.герой-текст {
+    flex: 1;
+}
+
+.герой-картинка {
+    flex: 1;
+}
+
+.герой h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.герой-подзаголовок {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.галочки {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.галочки li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* УСЛУГИ */
+.услуги {
+    padding: 60px 0;
+}
+
+.услуги h2, .онас h2, .этапы h2, .контакты h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.услуги-сетка {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.услуга-карточка {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 30px 25px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.услуга-карточка:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.услуга-карточка h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.цена {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0f7b6e;
+    margin-top: 15px;
+}
+
+/* О НАС */
+.онас {
+    background: #eef2f1;
+    padding: 60px 0;
+}
+
+.онас-сетка {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.онас-сетка div {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ЭТАПЫ */
+.этапы {
+    padding: 60px 0;
+}
+
+.этапы-сетка {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.этап {
+    background: #0f7b6e;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+/* КОНТАКТЫ И ФОРМА */
+.контакты {
+    padding: 60px 0;
+    background: #f0f7f5;
+}
+
+.контакты-сетка {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.форма {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.форма input, .форма select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.контакты-инфо {
+    flex: 1;
+}
+
+.контакты-инфо p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.маленький-текст {
+    font-size: 11px;
+    color: gray;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ПОДВАЛ */
+.подвал {
+    background: #0a2e3a;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.подвал a {
+    color: #0f7b6e;
+}
+
+/* ТЕЛЕФОНЫ */
+@media (max-width: 768px) {
+    .герой h1 {
+        font-size: 28px;
+    }
+    .шапка .контейнер {
+        flex-direction: column;
+        text-align: center;
+    }
+}
